@@ -14,7 +14,7 @@ namespace COMP003B.Lecture5
             builder.Services.AddControllers(options =>
             {
                 options.InputFormatters.Add(new XmlSerializerInputFormatter(options));
-                options.OutputFormatters.Add(new XmlSerializerOutputFormatter(options));
+                options.OutputFormatters.Add(new XmlSerializerOutputFormatter());
             });
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
